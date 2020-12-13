@@ -1,0 +1,16 @@
+.jobs {
+    padding: 7rem 2rem 2rem 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.jobs  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.jobs p {
+    text-align: center;
+    margin-bottom: 2rem;
+}

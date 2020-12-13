@@ -1,0 +1,40 @@
+#contact {
+    padding: 7rem 4rem 4rem 4rem;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+#contact h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#contact p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#contact button {
+    cursor: pointer;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 0;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    background-color: var(--color-body);
+    color: var(--color-primary);
+
+    box-shadow: 0 2px 2px 0 rgba(156, 39, 176, 0.14), 
+                0 3px 1px -2px rgba(156, 39, 176, 0.2), 
+                0 1px 5px 0 rgba(156, 39, 176, 0.12);
+}
+
+#contact button:hover {
+    transition: box-shadow 250ms;
+    box-shadow: 0 4px 4px 2px rgba(156, 39, 176, 0.2), 
+                0 3px 1px -2px rgba(156, 39, 176, 0.3), 
+                0 1px 5px 2px rgba(156, 39, 176, 0.2);
+}

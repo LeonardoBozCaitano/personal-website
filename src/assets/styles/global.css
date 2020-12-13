@@ -1,0 +1,43 @@
+:root {
+    --color-body: #e0dede;
+    --color-page: #f8eeee;
+    --color-primary:#3c4858;
+    --color-primary-darker:#272f38;
+    --color-secondary: rgb(156, 156, 156);
+    
+    font-size: 60%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--color-body);
+}
+
+body,
+input,
+button,
+textarea {
+    font-size: 1.6rem;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 100;
+    line-height: 1.5em;
+}
+
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 700px) {
+    :root {
+        font-size: 62.5%;
+    }
+}
+
+

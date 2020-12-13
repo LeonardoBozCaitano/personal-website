@@ -1,0 +1,24 @@
+.card {
+    margin: 0;
+    padding: 2rem 3rem 3rem 3rem;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img {
+    max-width: 20rem;
+    max-height: 10rem;
+    display: block;
+    margin: 1rem auto 3rem auto;
+}
+
+.card h3 {
+    text-align: center;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.card p {
+    margin-top: 1rem;
+}

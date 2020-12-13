@@ -1,0 +1,45 @@
+#banner {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./../../assets/images/sky.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner img {
+    width: 17rem;
+    height: 17rem;
+    border-radius: 50%;
+    margin-bottom: 4rem;
+}
+
+#banner h1 {
+    font-size: 3rem;
+    color: whitesmoke;
+    margin-bottom: 1rem;
+}
+
+#banner p {
+    font-size: 1.3rem;
+    color: rgb(196, 195, 195);
+    margin-bottom: 5rem;
+}
+
+#banner div {
+    width: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#banner div img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 20%;
+    margin-bottom: 4rem;
+}
