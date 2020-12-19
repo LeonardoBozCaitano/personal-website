@@ -10,7 +10,10 @@ jobs:
       - uses: actions/checkout@v2
       - name: Yarn install and build
         run: yarn install && yarn build
-      - uses: and-cru/actions-s3-static-upload@v12
+      - uses: and-cru/actions-s3-static-upload@v12      
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         with:
           milliseconds: 500
           s3-bucket-name: ${{ secrets.S3_BUCKET_STATIC_WEBSITE }}
