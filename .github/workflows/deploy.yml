@@ -1,0 +1,15 @@
+name: Deploy
+ 
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: and-cru/actions-s3-static-upload@v12
+        with:
+          milliseconds: 500
+          s3-bucket-name: ${{ secrets.S3_BUCKET_STATIC_WEBSITE }}
+          folder: build
