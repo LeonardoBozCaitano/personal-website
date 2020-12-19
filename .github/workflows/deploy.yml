@@ -18,3 +18,7 @@ jobs:
           milliseconds: 500
           s3-bucket-name: ${{ secrets.S3_BUCKET_STATIC_WEBSITE }}
           folder: build
+        with:
+          milliseconds: 500
+          s3-bucket-name: www.${{ secrets.S3_BUCKET_STATIC_WEBSITE }}
+          folder: build
