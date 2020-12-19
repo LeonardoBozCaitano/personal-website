@@ -9,6 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: and-cru/actions-s3-static-upload@v12
+        run: yarn install && yarn build
         with:
           milliseconds: 500
           s3-bucket-name: ${{ secrets.S3_BUCKET_STATIC_WEBSITE }}
