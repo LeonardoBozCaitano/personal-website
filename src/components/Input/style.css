@@ -5,9 +5,6 @@
     color: var(--color-secondary);
 }
 
-/**
- * Todo input-block que não ser o primeiro vai ter essa definição.
- */
 .input-block + .input-block {
     margin-top: 1.4rem;
 }

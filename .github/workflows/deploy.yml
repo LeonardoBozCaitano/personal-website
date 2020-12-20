@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Yarn install and build
-        run: yarn install && yarn build
+      - name: Yarn install and build project
+        run: yarn install && REACT_APP_SEND_EMAIL_URL=${{secrets.REACT_APP_SEND_EMAIL_URL}} && yarn build
       - uses: and-cru/actions-s3-static-upload@v12      
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
@@ -17,12 +17,4 @@ jobs:
         with:
           milliseconds: 500
           s3-bucket-name: ${{ secrets.S3_BUCKET_STATIC_WEBSITE }}
-          folder: build
-      - uses: and-cru/actions-s3-static-upload@v12      
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        with:
-          milliseconds: 500
-          s3-bucket-name: www.${{ secrets.S3_BUCKET_STATIC_WEBSITE }}
           folder: build
