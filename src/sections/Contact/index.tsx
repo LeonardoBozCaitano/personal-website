@@ -34,12 +34,12 @@ const Contact: React.FC = () => {
     }
 
     function isValid(email: Email): boolean {
-        if (!email.email || email.email === "") {
-            alert("Email inválido");
-            return false;
-        }
         if (!email.name || email.name === "") {
             alert("Nome inválido");
+            return false;
+        }
+        if (!email.email || email.email === "") {
+            alert("Email inválido");
             return false;
         }
         if (!email.message || email.message === "") {

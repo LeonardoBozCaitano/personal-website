@@ -1,5 +1,5 @@
 name: Build
- 
+
 on:
   push:
     branches: [ main ]
@@ -12,4 +12,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Yarn install and build project
-        run: yarn install && REACT_APP_SEND_EMAIL_URL=${{secrets.REACT_APP_SEND_EMAIL_URL}} && yarn build
+        run: yarn install && yarn build
