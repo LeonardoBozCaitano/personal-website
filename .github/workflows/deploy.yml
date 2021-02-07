@@ -8,7 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Yarn install and build project
+        env:
+         REACT_APP_SEND_EMAIL_URL: ${{secrets.REACT_APP_SEND_EMAIL_URL}}
         run: yarn install && yarn build
       - uses: and-cru/actions-s3-static-upload@v12
         env:
