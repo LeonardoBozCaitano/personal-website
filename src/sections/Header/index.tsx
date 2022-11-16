@@ -14,7 +14,7 @@ const Header: React.FC = () => {
         <div id="banner">
             <img src={image} alt="Leonardo Boz Caitano"/>
             <h1>Leonardo Boz Caitano</h1>
-            <p>ANALISTA E DESENVOLVEDOR DE SISTEMAS</p>
+            <p>ENGENHEIRO DE SOFTWARE</p>
             <div>
                 <a href={linkedInUrl} target="_blank" rel="noopener noreferrer">
                     <img alt="LinkedIn" src={linkedIn}/>

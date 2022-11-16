@@ -4,11 +4,16 @@ import philipsIcon from '../assets/images/philips.png';
 import projurisIcon from '../assets/images/projuris.png';
 import seniorIcon from '../assets/images/senior.png';
 import abaseIcon from '../assets/images/abase.png';
+import pagbankIcon from '../assets/images/pagbank.webp';
 
 export class JobService {
     public getJobs(): Job[] {
         return [
             {
+                company: "Pagbank",
+                image: pagbankIcon,
+                description: "Desenvolvemos um processo que permite o cliente fazer transferências de dinheiro iniciando através de outros bancos. Utilizamos tecnologias como Java com Spring e AWS para criar um processo assincrono de pagamentos online"
+            }, {
                 company: "Projuris Software Juridico",
                 image: projurisIcon,
                 description: "Trabalhando no time de tecnologia, analisando, desenvolvendo e monitorando microserviços utilizando Java com spring e conceitos de Rest. Participando da migração do sistema atual para o novo.",

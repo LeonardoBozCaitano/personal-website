@@ -12,7 +12,7 @@ const About: React.FC = () => {
         Encontrei no desenvolvimento de software a carreira perfeita para o meu perfil de pessoa, sempre buscando crescimento, aprendizado e novos desafios.
       </p>
       <p>
-        Poucos assuntos me animam tanto quanto tecnologia, investimentos e marketing digital.
+        Poucos assuntos me animam tanto quanto tecnologia, investimentos e desenvolvimento de empresas e produtos inovadores.
       </p>
     </div>
   );
